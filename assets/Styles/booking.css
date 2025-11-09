@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #f8f6f2 0%, #f0ede8 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 0;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #8c6d46;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #d4af37;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.back-btn {
+  background: #8c6d46;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(140, 109, 70, 0.2);
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: #d4af37;
+  transform: translateX(-5px);
+}
+
+.booking-container {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0ede8;
+  padding-bottom: 20px;
+}
+
+.booking-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.booking-icon {
+  font-size: 2.5rem;
+  color: #d4af37;
+}
+
+.room-card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  background: #faf9f7;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.room-image {
+  width: 250px;
+  height: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-info {
+  flex-grow: 1;
+}
+
+.room-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.room-price {
+  color: #d4af37;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.room-desc {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e4e0d7;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #d4af37;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #8c6d46, #6b5435);
+  color: white;
+  padding: 18px 45px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(140, 109, 70, 0.3);
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #b89735);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+.msg {
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.success {
+  background: #e6f7ee;
+  color: #2e8b57;
+  border-left: 4px solid #2e8b57;
+}
+
+.error {
+  background: #fce8e6;
+  color: #d93025;
+  border-left: 4px solid #d93025;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .room-card {
+    flex-direction: column;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .booking-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-container,
+  .bookings-section {
+    padding: 25px;
+  }
+
+  .booking-title {
+    font-size: 2rem;
+  }
+
+  .bookings-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
