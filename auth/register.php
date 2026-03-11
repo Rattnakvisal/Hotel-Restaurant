@@ -89,6 +89,7 @@ oci_close($connection);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- ADD THIS -->
     <title>RoyalNest | Register</title>
+    <link rel="icon" type="image/png" href="/Hotel-Restaurant/assets/Logo/RoyalNest.png" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
